@@ -38,7 +38,7 @@ cd -
 echo ' download jar files used by elasicsearch console:'
 echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
 mkdir -p third_party/es_console; cd   third_party/es_console
-cp ../../msec_console/*  ./
+cp -r ../../msec_console/*  ./
 cd -
 
 echo 'download jar files used by remote shell server:'
