@@ -106,9 +106,9 @@ mkdir -p http-parser; cd http-parser
 wget --content-disposition --timeout=5 --tries=5 'https://codeload.github.com/nodejs/http-parser/tar.gz/v2.7.1'
 cd -
 
-mkdir -p libunwind; cd libunwind
-wget --content-disposition --timeout=5 --tries=5 'http://ftp.yzu.edu.tw/nongnu/libunwind/libunwind-1.1.tar.gz'
-cd -
+#mkdir -p libunwind; cd libunwind
+#wget --content-disposition --timeout=5 --tries=5 'http://ftp.yzu.edu.tw/nongnu/libunwind/libunwind-1.1.tar.gz'
+#cd -
 
 mkdir -p jansson; cd jansson
 wget --content-disposition --timeout=5 --tries=5 'http://www.digip.org/jansson/releases/jansson-2.9.tar.gz'
