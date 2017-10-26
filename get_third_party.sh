@@ -25,20 +25,20 @@ cd -
 echo ' download jar files used by monitor console:'
 echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
 mkdir -p third_party/monitor/monitor_console;cd third_party/monitor/monitor_console
-cp ../../msec_console/*  ./
+#cp ../../msec_console/*  ./
 cd -
 
 echo ' download jar files used by redis console:'
 echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
 mkdir -p third_party/redis/redis_console; cd   third_party/redis/redis_console
-cp ../../msec_console/*  ./
+#cp ../../msec_console/*  ./
 wget http://search.maven.org/remotecontent?filepath=redis/clients/jedis/2.8.1/jedis-2.8.1.jar
 cd -
 
 echo ' download jar files used by elasicsearch console:'
 echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
 mkdir -p third_party/es_console; cd   third_party/es_console
-cp -r ../../msec_console/*  ./
+#cp ../../msec_console/*  ./
 cd -
 
 echo 'download jar files used by remote shell server:'
@@ -106,9 +106,10 @@ mkdir -p http-parser; cd http-parser
 wget --content-disposition --timeout=5 --tries=5 'https://codeload.github.com/nodejs/http-parser/tar.gz/v2.7.1'
 cd -
 
-#mkdir -p libunwind; cd libunwind
+mkdir -p libunwind; cd libunwind
+echo 'download by myself'
 #wget --content-disposition --timeout=5 --tries=5 'http://ftp.yzu.edu.tw/nongnu/libunwind/libunwind-1.1.tar.gz'
-#cd -
+cd -
 
 mkdir -p jansson; cd jansson
 wget --content-disposition --timeout=5 --tries=5 'http://www.digip.org/jansson/releases/jansson-2.9.tar.gz'
