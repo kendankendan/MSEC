@@ -107,7 +107,7 @@ wget --content-disposition --timeout=5 --tries=5 'https://codeload.github.com/no
 cd -
 
 mkdir -p libunwind; cd libunwind
-wget --content-disposition --timeout=5 --tries=5 'http://download.savannah.gnu.org/releases/libunwind/libunwind-1.1.tar.gz'
+wget --content-disposition --timeout=5 --tries=5 'http://ftp.yzu.edu.tw/nongnu/libunwind/libunwind-1.1.tar.gz'
 cd -
 
 mkdir -p jansson; cd jansson
