@@ -159,7 +159,7 @@ python:
 		tar -xvf ../../third_party/srpc/python/* -C ./third_party; \
 		cd ./third_party/Python* ;\
 		./configure --enable-shared --prefix=$(CURPWD)/third_party/python; \
-		make; make install; \
+		make ZEND_EXTRA_LIBS='-liconv'; make install; \
 		cd -;\
 	fi; 
 
