@@ -150,7 +150,7 @@ php:
 		tar -zxvf ../../third_party/srpc/php/php* -C ./third_party; \
 		cd ./third_party/php* ;\
 		./configure --enable-debug --without-pear --disable-xmlreader --disable-xmlwriter --disable-xml --disable-libxml --disable-dom --disable-simplexml --enable-sockets --enable-maintainer-zts --disable-cgi --enable-json --enable-cli --enable-embed --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --enable-pdo --prefix=$(CURPWD)/third_party/php; \
-		make; make install; \
+		make ZEND_EXTRA_LIBS='-liconv'; make install; \
 	fi
     
 python:
@@ -159,7 +159,7 @@ python:
 		tar -xvf ../../third_party/srpc/python/* -C ./third_party; \
 		cd ./third_party/Python* ;\
 		./configure --enable-shared --prefix=$(CURPWD)/third_party/python; \
-		make ZEND_EXTRA_LIBS='-liconv'; make install; \
+		make; make install; \
 		cd -;\
 	fi; 
 
